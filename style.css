@@ -1,0 +1,324 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#hamburger {
+    font-size: 4em;
+}
+
+nav, #gallery, aside {
+    display: none;
+}
+
+#mainContent {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    flex-direction: column;
+}
+
+#hero {
+    background-image: url("image/multi-parrots.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    height: 270px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin: 0 20px 55px 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.popParrots {
+    width: 600px;
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popParrotsBox {
+    width: calc(100% - 50px);
+    height: 280px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #000;
+}
+
+.popParrotsBox:last-child {
+    border: none;
+}
+
+.popParrotsImg img {
+    width: 100%;
+    height: auto;
+}
+
+.popParrotsImg {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.popParrotsImg .moveImg {
+    object-position: 0 -50px;
+}
+
+.popParrotsBox h3 {
+    margin: 15px 0 5px 0;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.flexPopParrots {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryImg {
+    width: 120px;
+    height: 120px;
+    overflow: hidden; 
+    margin: 10px 1px 10px 0;
+}
+
+.galleryImg img {
+    width: auto;
+    height: 100%;
+}
+
+.galleryImg .moveImg {
+    object-position: -20px;
+}
+
+aside h3 {
+    color: #419c1a;
+    font-family: 'Bree Serif', serif;
+    font-weight: 100;
+}
+
+aside p, aside a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+}
+
+aside a {
+    display: block;
+    color: #419c1a;
+    text-decoration: none;
+    font-style: italic;
+    text-align: right;
+}
+
+aside h2 {
+    text-align: left;
+    font-size: 1.6em;
+    margin: 0px 0px 30px 0px;
+}
+
+.blogPost {
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+}
+
+.blogImg {
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+}
+
+.blogImg img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    height: 50px;
+    background: #000;
+}
+
+
+@media screen and (min-width: 570px) {
+    #hamburger {
+        display: none;
+    }
+    
+    #logo h1 {
+        font-size: 2.5em;   
+    }
+    
+    header {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        padding: 10px 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin: 0 20px 20px 20px;
+    }
+    
+    nav {
+        display: inline-block;
+    }
+    
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin: 10px 30px 20px 30px;
+    }
+    
+    nav a {
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    
+    .popParrots {
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        margin: 0 20px 25px 20px;
+    }
+    
+    .popParrotsBox {
+        width: calc(50% - 15px);
+        height: 230px;
+        margin-bottom: 20px;
+        border: none;
+    }
+    
+    .popParrotsBox:nth-child(2) {
+        margin-left: 20px;
+    }
+    
+    .popParrotsBox:nth-child(4) {
+        margin-left: 20px;
+    }
+    
+    .popParrotsBox h3 {
+        font-size: 1em;
+    }
+    
+    #gallery {
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    .flexGallery {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        justify-content: center;
+    }
+    
+    .gallery {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 600px;
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #hero {
+        height: 370px;
+        margin-bottom: 25px;
+    }
+    
+    #logo h1 {
+        font-size: 3em;   
+    }
+    
+    aside {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        border-left: 1px solid #000;
+        padding-left: 40px;
+        width: 200px;
+        flex-direction: column;
+    }
+    
+    main {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        flex-direction: row;
+        margin: 60px 0 80px 0;
+        justify-content: center;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    #centerContent {
+        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    }
+    
+    .popParrots {
+        margin: 0 40px 25px 20px;
+    }
+    
+    .gallery {
+        margin: 0 40px 25px 20px;
+    }
+}
